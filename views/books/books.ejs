@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Books</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>Books</h1>
+    <ul>
+        <% for (var i=0; i<list.length; i++) { %>
+            <li><%= list[i].title %><a href="/books/<%= i %>">Read More</a></li>
+        <% } %>
+    </ul>
+</body>
+</html>
